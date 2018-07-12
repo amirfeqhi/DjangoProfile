@@ -18,13 +18,9 @@ install:
 
 - pip install -r requirements.txt
 
-- sudo npm install -g bower
- 
 # run test scripts
 
 script:
-
-- bower install --settings=src.profiles_project.profiles_project.settings
 
 - python src/profiles_project/manage.py collectstatic --noinput --settings=src.profiles_project.profiles_project.settings
 
