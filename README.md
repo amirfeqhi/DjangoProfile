@@ -9,6 +9,7 @@ A Django rest api for managing user profiles
 
 ### Requirements
 1. Vagrant (for more information -> [Vagrant website](https://www.vagrantup.com/))
+2. VirtualBox
 2. Django Version 1.11.1
 3. Django rest framework library Version 3.6.2
 
