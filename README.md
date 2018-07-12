@@ -1,2 +1,2 @@
 # rest-api
-Just a django rest api
+A Django rest api for creatin user profiles
