@@ -18,8 +18,8 @@ install:
 
 - pip install -r requirements.txt
 
-- yarn global add bower
-
+- sudo npm install -g bower
+ 
 # run test scripts
 
 script:
