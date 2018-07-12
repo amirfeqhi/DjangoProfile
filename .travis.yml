@@ -1,0 +1,61 @@
+language: python
+
+python:
+
+- "2.7"
+
+# setup environment
+
+env:
+
+- DJANGO_VERSION=1.11.1
+
+- DJANGO_SETTINGS_MODULE='profiles_project.profiles_project.settings'
+
+# install dependencies
+
+install:
+
+- pip install -r requirements.txt
+
+- npm install bower
+
+# run test scripts
+
+script:
+
+- bower install --settings=profiles_project.profiles_project.settings
+
+- python profiles_project/manage.py collectstatic --noinput --settings=profiles_project.profiles_project.settings
+
+- coverage run --source=. profiles_project/manage.py test profiles_project/profiles_api --noinput --settings=profiles_project.profiles_project.settings
+
+# run coveralls after successful tests
+
+after_success:
+
+- coveralls
+
+# Deploy to staging or production with proper settings
+
+buildpack:
+
+- node
+
+- python
+
+app: dothebucket
+
+on:
+
+all_branches: true
+
+run:
+
+- "export DJANGO_SETTINGS_MODULE=profiles_project.profiles_project.settings"
+
+- "python profiles_project/manage.py collectstatic --noinput --settings=profiles_project.profiles_project.settings"
+
+- "python profiles_project/manage.py makemigrations --settings=profiles_project.profiles_project.settings"
+
+- "python profiles_project/manage.py migrate --settings=profiles_project.profiles_project.settings"
