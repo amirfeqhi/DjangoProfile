@@ -26,7 +26,7 @@ A Django rest api for creating user profiles
   1. `> virtualenv "venv_name" --python=python3`
   2. `> source "venv_name/bin/activate"`
 
-**Note:** Enter `> deactivate` for exit from venv
+  **Note:** Enter `> deactivate` for exit from venv
 
 * Run server on vagrant for testing
 
