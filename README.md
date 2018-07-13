@@ -6,6 +6,8 @@ A Django rest api for managing user profiles
 [![Coverage Status](https://coveralls.io/repos/github/amirfeqhi/rest-api/badge.svg?branch=master)](https://coveralls.io/github/amirfeqhi/rest-api?branch=master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/amirfeqhi/DjangoProfile/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
+![Django restapi](http://www.django-rest-framework.org/img/logo.png)
+
 ## How to use
 * **Attention:** It's a good practice to run your code on a virtual server like Vagrant
 
