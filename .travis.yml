@@ -22,7 +22,7 @@ install:
 
 script:
 
-- python src/profiles_project/manage.py
+- python src/profiles_project/manage.py collectstatic --noinput --settings=profiles_project.settings
 
 - coverage run --source=. src/profiles_project/manage.py test src/profiles_project/profiles_api --noinput --settings=profiles_project.settings
 
@@ -50,7 +50,7 @@ run:
 
 - "export DJANGO_SETTINGS_MODULE=src.profiles_project.profiles_project.settings"
 
-- "python src/profiles_project/manage.py"
+- "python src/profiles_project/manage.py collectstatic --noinput --settings=profiles_project.settings"
 
 - "python src/profiles_project/manage.py makemigrations --settings=profiles_project.settings"
 
