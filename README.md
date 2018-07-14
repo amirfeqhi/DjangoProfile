@@ -1,8 +1,12 @@
 # RESTful API
 A Django rest api for managing user profiles
 
-[![Build Status](https://travis-ci.com/amirfeqhi/rest-api.svg?branch=master)](https://travis-ci.com/amirfeqhi/rest-api)
+[![Build Status](https://travis-ci.com/amirfeqhi/DjangoProfile.svg?branch=master)](https://travis-ci.com/amirfeqhi/DjangoProfile)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/amirfeqhi/DjangoProfile/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/amirfeqhi/DjangoProfile/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/amirfeqhi/rest-api/badge.svg?branch=master)](https://coveralls.io/github/amirfeqhi/rest-api?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/amirfeqhi/DjangoProfile/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+
+![Django restapi](http://www.django-rest-framework.org/img/logo.png)
 
 ## How to use
 * **Attention:** It's a good practice to run your code on a virtual server like Vagrant
