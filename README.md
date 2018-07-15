@@ -20,19 +20,19 @@ A Django rest api for managing user profiles
 ### Usage
 * Setup And Config Vagrant
 
-  1. `> vagrant init`
+  1. `$ vagrant init`
 
-  2. `> vagrant up`
+  2. `$ vagrant up`
 
-  3. `> vagrant ssh`
+  3. `$ vagrant ssh`
 
 * Create a virtual-environment on Vagrant
 
-  1. `> virtualenv "venv_name" --python=python3`
-  2. `> source "venv_name/bin/activate"`
+  1. `$ virtualenv "venv_name" --python=python3`
+  2. `$ source "venv_name/bin/activate"`
 
-  **Note:** Enter `> deactivate` for exit from venv
+  **Note:** Enter `$ deactivate` for exit from venv
 
 * Run server on vagrant for testing
 
-  1. `> python manage.py runserver 0.0.0.0:8080`
+  1. `$ python manage.py runserver 0.0.0.0:8080`
